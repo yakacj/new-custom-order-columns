@@ -1,0 +1,68 @@
+/* Admin style */
+
+.ycombox{
+    border: 1px solid #bdbfc1;
+    padding-left: 3px;
+    margin-right: 10px;
+    border-radius: 3px;
+    user-select: none;
+    
+}
+.ycombox .ycrecboard {
+  height: 10px;
+  width: 20px;
+  background-color:#66696e;
+  box-shadow: 1px .5px #888;
+  display:inline-block;
+  margin-left:1px;
+  margin-right:1px;
+  margin-bottom: 1px;
+  
+}
+.ycmdatac{
+    margin-top:25px;
+}
+.yc-col-tbl {
+    width: 100%; 
+    max-width:650px;
+}
+.yc-col-tbl .ycmflat{
+    text-align:left;
+}
+.ycrb,.ycnb{
+    padding:0 0!important;
+    font-size:14px;
+}
+.yc-col-tbl .ycnb,.ycrb{
+    width:40px;
+}
+.yc-col-tbl tr:not(.active) .ycnb{
+    display: none;
+}
+.yc-col-tbl .active .ycrb{
+    display: none;
+}
+.ycocw-submit {
+    margin-top:40px;margin-bottom:0px;
+}
+.ycthtd {
+padding-bottom: 10px;
+padding-right: 40px;
+}
+.ycthtd input[type=text]{width:100%;}
+.ycobt{padding-top:6px;}
+.ycobtm{padding-top:4.5px;}
+
+@media only screen and (max-width:782px){
+    .ycobtm{padding-top:9px;}
+    .ycobt{padding-top:10px;}
+}
+@media only screen and (max-width: 600px){
+    .ycthtd {
+    padding-bottom: 10px;
+    padding-right: 0;
+}
+   .yc-col-tbl .yc-btn-com{
+       padding-left: 4px;
+   }
+}
