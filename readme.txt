@@ -1,4 +1,4 @@
-=== New Custom Shop Order Columns ===
+=== New Custom Order Columns ===
 
 Tags: woocommerce, order, columns, column, shop, admin, orders, custom column, woo commerce
 
