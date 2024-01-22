@@ -169,11 +169,11 @@ class Ycocw_Admin {
         
         if( isset( $_POST['ycocw_save'] ) ) {
         	if ( ! ( isset( $_REQUEST['_wpnonce'] ) && wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST['_wpnonce'] ) ), 'ycocw-nonce' ) ) ) {
-				die( 'Security check' );
-			}
+			die( 'Security check' );
+		}
 			
-            $titles =  isset( $_POST['col_title'] ) ? array_map( 'esc_attr', (array) $_POST['col_title'] ) : array();
-            $metas  =  isset( $_POST['col_meta'] ) ? array_map( 'esc_attr', (array) $_POST['col_meta'] ) : array();
+            $titles =  isset( $_POST['col_title'] ) ? array_map( 'esc_attr', array_map( 'sanitize_text_field', (array) $_POST['col_title'] ) ) : array();
+            $metas  =  isset( $_POST['col_meta'] ) ? array_map( 'esc_attr', array_map( 'sanitize_text_field', (array) $_POST['col_meta'] ) ) : array();
             
             for ( $i = 0; $i < count( $titles ); $i++ ) {
             
